@@ -24,9 +24,9 @@ const ServiceModal = ({ visible, service, onClose }) => {
     >
       <View style={styles.overlay}>
         <View style={styles.modalContent}>
-          {/* Botão de fechar, renderizado primeiro mas com zIndex alto */}
+          
           <TouchableOpacity style={styles.closeButton} onPress={onClose}>
-            <Ionicons name="close-circle" size={32} color={colors.white} />
+            <Ionicons name="close-circle" size={32} color={colors.black} />
           </TouchableOpacity>
 
           <ScrollView>
@@ -37,8 +37,7 @@ const ServiceModal = ({ visible, service, onClose }) => {
             </View>
           </ScrollView>
 
-          {/* O Ícone do Serviço fica por último (fora do ScrollView) 
-              para flutuar por cima de tudo */}
+
           <View style={styles.iconContainer}>
             <Image source={service.icon} style={styles.icon} />
           </View>
@@ -63,18 +62,18 @@ const styles = StyleSheet.create({
     backgroundColor: colors.white,
     borderRadius: layout.borderRadius,
     ...layout.shadow,
-    overflow: 'hidden', // Importante para o borderRadius
+    overflow: 'hidden', 
   },
   modalImage: {
     width: '100%',
-    height: 200,
-    resizeMode: 'cover',
+    height: 350,
+    resizeMode: 'contain',
   },
   iconContainer: {
     position: 'absolute',
-    top: 175,
+    top: 310,
     left: '50%',
-    // Truque para centralizar com transform
+
     transform: [{ translateX: -35 }], 
     width: 70,
     height: 70,
@@ -85,7 +84,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     borderWidth: 3,
     borderColor: colors.background,
-    zIndex: 10, // <-- CORREÇÃO 1: zIndex alto para o ícone
+    zIndex: 10, 
   },
   icon: {
     width: 40,
@@ -95,9 +94,9 @@ const styles = StyleSheet.create({
   textContent: {
     backgroundColor: colors.background,
     padding: 20,
-    paddingTop: 55, // Espaço para o ícone
+    paddingTop: 55, 
     alignItems: 'center',
-    zIndex: 1, // <-- CORREÇÃO 2: zIndex baixo para o texto
+    zIndex: 1, 
   },
   title: {
     ...typography.title,

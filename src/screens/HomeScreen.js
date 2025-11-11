@@ -1,4 +1,3 @@
-// src/screens/HomeScreen.js
 import React from 'react';
 import {
   View,
@@ -12,17 +11,12 @@ import {
 } from 'react-native';
 import { colors, typography, layout } from '../constants/theme';
 import { Ionicons } from '@expo/vector-icons';
-import AppButton from '../components/AppButton';
 
 const HomeScreen = () => {
   const openWhatsApp = () => {
     Linking.openURL(
       'whatsapp://send?phone=19999437526&text=Olá, Gostaria de saber mais sobre os serviços.'
     );
-  };
-
-  const openCalendly = () => {
-    alert('Abrir agendamento!');
   };
 
   return (
@@ -42,14 +36,12 @@ const HomeScreen = () => {
         </Text>
 
         <View style={styles.buttonContainer}>
-          <AppButton title="Agende seu Horario" onPress={openCalendly} />
-
           <TouchableOpacity
-            style={styles.whatsappButton}
+            style={styles.whatsappButton} 
             onPress={openWhatsApp}
           >
-            <Ionicons name="logo-whatsapp" size={20} color={colors.primaryDark} />
-            <Text style={styles.whatsappButtonText}>(19) 99943-7526</Text>
+            <Ionicons name="logo-whatsapp" size={22} color={colors.white} />
+            <Text style={styles.whatsappButtonText}>Entrar em contato</Text>
           </TouchableOpacity>
         </View>
       </ScrollView>
@@ -98,17 +90,19 @@ const styles = StyleSheet.create({
   whatsappButton: {
     flexDirection: 'row',
     alignItems: 'center',
-    backgroundColor: colors.white,
-    paddingVertical: 12,
+    justifyContent: 'center', 
+    backgroundColor: colors.primary, 
+    paddingVertical: 14, 
     paddingHorizontal: 24,
     borderRadius: layout.borderRadius,
     ...layout.shadow,
     marginTop: 10,
+    width: '100%', 
   },
   whatsappButtonText: {
     fontFamily: typography.fontFamilyMedium,
-    color: colors.primaryDark,
-    fontSize: 16,
+    color: colors.white, 
+    fontSize: 18, 
     marginLeft: 10,
   },
 });

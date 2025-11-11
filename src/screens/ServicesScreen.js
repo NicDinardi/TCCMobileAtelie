@@ -13,7 +13,7 @@ const servicesData = [
     icon: require('../../assets/images/IconeTesoura.png'),
     longDescription:
       'Transformamos suas ideias em realidade. Este serviço é perfeito para quem busca uma peça exclusiva, com caimento impecável e que reflita sua personalidade.',
-    detailImage: require('../../assets/images/MateriasAtelie.png'),
+    detailImage: require('../../assets/images/Vestido 3.jpg'),
   },
   {
     id: '2',
@@ -22,7 +22,7 @@ const servicesData = [
     icon: require('../../assets/images/IconeAlfinete.png'),
     longDescription:
       'Dê uma nova vida às suas roupas favoritas! Realizamos todos os tipos de ajustes, como bainhas, apertar ou alargar peças, troca de zíperes e reparos em geral.',
-    detailImage: require('../../assets/images/ManequimFoto.png'),
+    detailImage: require('../../assets/images/Vizualizaer.jpg'),
   },
   {
     id: '33',
@@ -31,7 +31,7 @@ const servicesData = [
     icon: require('../../assets/images/IconeVestido.png'),
     longDescription:
       'Desenvolvemos figurinos e tutus sob medida para apresentações de balé e dança, garantindo conforto, beleza e movimento perfeitos para o palco.',
-    detailImage: require('../../assets/images/ManequimFoto.png'), // Imagem de placeholder
+    detailImage: require('../../assets/images/Bale1.jpg'), 
   },
   {
     id: '4',
@@ -40,7 +40,7 @@ const servicesData = [
     icon: require('../../assets/images/IconeMaquina.png'),
     longDescription:
       'Dê vida à sua imaginação! Criamos fantasias personalizadas para festas temáticas, carnaval e eventos, além de acessórios únicos.',
-    detailImage: require('../../assets/images/MateriasAtelie.png'), // Imagem de placeholder
+    detailImage: require('../../assets/images/Acessorio1.jpg'), 
   },
 ];
 
