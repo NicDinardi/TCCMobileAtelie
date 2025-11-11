@@ -43,7 +43,7 @@ const AboutScreen = () => {
           <Carousel
             loop
             width={carouselWidth}
-            height={250}
+            height={350}
             autoPlay={true}
             autoPlayInterval={4000}
             data={portfolioImages}
@@ -94,7 +94,7 @@ const styles = StyleSheet.create({
   // Estilos do Carrossel
   carouselContainer: {
     width: carouselWidth,
-    height: 250,
+    height: 350,
     borderRadius: layout.borderRadius,
     ...layout.shadow,
     marginBottom: 30,

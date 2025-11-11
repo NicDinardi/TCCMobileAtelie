@@ -17,7 +17,7 @@ import AppButton from '../components/AppButton';
 const HomeScreen = () => {
   const openWhatsApp = () => {
     Linking.openURL(
-      'whatsapp://send?phone=19999437526&text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20seus%20serviços.'
+      'whatsapp://send?phone=19999437526&text=Olá, Gostaria de saber mais sobre os serviços.'
     );
   };
 
